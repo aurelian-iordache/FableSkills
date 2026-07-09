@@ -4,6 +4,8 @@
 
 This pack was built for one purpose: to let cheaper AI coding sessions and smaller models carry projects forward at a principal-engineer standard — debugging, extending, validating, and operating software without the senior person in the room. Every command that could be run on the authoring machine was verified by execution against the real tools; the handful that couldn't be are explicitly labeled as such — and every skill tells you exactly how to re-verify it later.
 
+The entire pack was authored with **Claude Fable 5 at high reasoning effort** — Anthropic's most capable model, running a multi-agent workflow: a dedicated authoring agent per skill, three independent review agents (factual, doctrine, usability) over every skill, and a fixer pass — so that the skills can then be executed faithfully by smaller, cheaper models. Expensive to build once, cheap to run forever.
+
 *Last verified: 2026-07-09 — tool baseline and re-verification commands in [Provenance and maintenance](#provenance-and-maintenance).*
 
 ---
@@ -325,7 +327,7 @@ Run them with `python3` (Linux/macOS) or `py` (Windows).
 
 ## Provenance and maintenance
 
-- Built 2026-07-06 → 2026-07-09. Every skill was written by a dedicated authoring pass, then reviewed by three independent reviewers (**factual** — commands re-executed against real tools; **doctrine** — cross-skill contradictions and gate integrity; **usability** — trigger quality and zero-context executability), then fixed. Per the build's review records (not included in this repo), the four review waves surfaced 4 blocking and ~55 important findings, all fixed before release.
+- Built 2026-07-06 → 2026-07-09 with **Claude Fable 5** (model ID `claude-fable-5`) at high reasoning effort, orchestrating parallel authoring agents (one per skill). Every skill was then reviewed by three independent Fable 5 reviewer agents (**factual** — commands re-executed against real tools; **doctrine** — cross-skill contradictions and gate integrity; **usability** — trigger quality and zero-context executability), then fixed. Per the build's review records (not included in this repo), the four review waves surfaced 4 blocking and ~55 important findings, all fixed before release.
 - Verified tool baseline: .NET SDK 10.0.301 (C# 14), EF Core 10.0.9, ASP.NET Core 10.0.9, SQL Server LocalDB 17.0.4025, git 2.52, npm 11.12, Node 24. Facts tied to these versions are stamped in place.
 - Commands for tools not present on the authoring machine (`gh`, docker, kubectl, aws, make) are knowledge-checked, explicitly labeled as not-locally-verified, and carry re-check one-liners.
 - Every skill ends with its own **Provenance and maintenance** section: what may drift, and the exact command that re-verifies it. If you adopt this pack months from now, run those one-liners for the skills you rely on — especially `react-frontend-discipline`, whose ecosystem moves fastest.
