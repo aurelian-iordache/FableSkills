@@ -336,3 +336,7 @@ Run them with `python3` (Linux/macOS) or `py` (Windows).
 - Verified tool baseline: .NET SDK 10.0.301 (C# 14), EF Core 10.0.9, ASP.NET Core 10.0.9, SQL Server LocalDB 17.0.4025, git 2.52, npm 11.12, Node 24. Facts tied to these versions are stamped in place.
 - Commands for tools not present on the authoring machine (`gh`, docker, kubectl, aws, make) are knowledge-checked, explicitly labeled as not-locally-verified, and carry re-check one-liners.
 - Every skill ends with its own **Provenance and maintenance** section: what may drift, and the exact command that re-verifies it. If you adopt this pack months from now, run those one-liners for the skills you rely on — especially `react-frontend-discipline`, whose ecosystem moves fastest.
+
+## License
+
+[MIT](LICENSE) © 2026 Aurelian Iordache. Use it, copy it, adapt it, ship it — commercially or otherwise — as long as every copy keeps the copyright and license notice. Attribution is a condition of the license, not a courtesy.
