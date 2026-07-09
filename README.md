@@ -340,4 +340,4 @@ Run them with `python3` (Linux/macOS) or `py` (Windows).
 
 ## License
 
-[MIT](LICENSE) © 2026 Aurelian Iordache. Use it, copy it, adapt it, ship it — commercially or otherwise — as long as every copy keeps the copyright and license notice. Attribution is a condition of the license, not a courtesy.
+[MIT](LICENSE) © 2026 [Aurelian Iordache](https://www.linkedin.com/in/aurelianiordache). Use it, copy it, adapt it, ship it — commercially or otherwise — as long as every copy keeps the copyright and license notice. Attribution is a condition of the license, not a courtesy.
