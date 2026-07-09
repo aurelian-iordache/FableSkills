@@ -32,6 +32,7 @@ Every command that could be run on the authoring machine was verified by executi
 - [Included scripts](#included-scripts)
 - [Conventions used inside the skills](#conventions-used-inside-the-skills)
 - [Provenance and maintenance](#provenance-and-maintenance)
+- [License](#license)
 
 ---
 
