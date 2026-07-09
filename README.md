@@ -2,9 +2,13 @@
 
 **20 engineering-discipline skills that make an AI coding assistant (or a junior/mid-level engineer) work like a very senior developer: smallest honest diffs, evidence over vibes, gated changes, measured claims, and no unnecessary code.**
 
-This pack was built for one purpose: to let cheaper AI coding sessions and smaller models carry projects forward at a principal-engineer standard — debugging, extending, validating, and operating software without the senior person in the room. Every command that could be run on the authoring machine was verified by execution against the real tools; the handful that couldn't be are explicitly labeled as such — and every skill tells you exactly how to re-verify it later.
+## Why this exists
 
-The entire pack was authored with **Claude Fable 5 at high reasoning effort** — Anthropic's most capable model, running a multi-agent workflow: a dedicated authoring agent per skill, three independent review agents (factual, doctrine, usability) over every skill, and a fixer pass — so that the skills can then be executed faithfully by smaller, cheaper models. Expensive to build once, cheap to run forever.
+Claude Fable 5 — Anthropic's most powerful, Mythos-class model — is leaving subscription plans and becoming pay-as-you-go only. For most developers, that means day-to-day coding moves back to less powerful models like Opus and Sonnet.
+
+So before it went, Fable 5 was put to work at high reasoning effort on one job: **writing down how a very senior software developer actually works — so that smaller models can act like one.** This pack is what it left behind. Expensive to build once, cheap to run forever: install it, and Opus- or Sonnet-class sessions start producing smallest-honest-diff PRs, evidence-backed claims, and gated changes instead of over-engineered scaffolding — debugging, extending, validating, and operating software at a principal-engineer standard without the senior person in the room.
+
+Every command that could be run on the authoring machine was verified by execution against the real tools; the handful that couldn't be are explicitly labeled as such — and every skill tells you exactly how to re-verify it later. The authoring itself was a multi-agent workflow: a dedicated Fable 5 authoring agent per skill, three independent review agents (factual, doctrine, usability) over every skill, and a fixer pass.
 
 *Last verified: 2026-07-09 — tool baseline and re-verification commands in [Provenance and maintenance](#provenance-and-maintenance).*
 
@@ -12,6 +16,7 @@ The entire pack was authored with **Claude Fable 5 at high reasoning effort** �
 
 ## Table of contents
 
+- [Why this exists](#why-this-exists)
 - [What is a skill?](#what-is-a-skill)
 - [What's in the pack](#whats-in-the-pack)
 - [Installation](#installation)
